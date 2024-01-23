@@ -9,12 +9,12 @@ export default function Todo() {
   console.log(todos);
   return (
     <div>
-      <div className="mt-8 font-extrabold ">Todos</div>
+      <div className="text-white mt-8 font-extrabold ">Todos</div>
       {todos.map((todo) => (
-        <ul className="list-none ml-9 mr-9">
+        <ul className="list-none ml-9 mr-9 ">
           {todos.map((todo) => (
             <li
-              className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
+              className="mt-4 flex justify-between items-center bg-indigo-500 text-black px-4 py-2 rounded"
               key={todo.id}
             >
               <div className="text-white">{todo.text}</div>
